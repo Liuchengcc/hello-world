@@ -1,0 +1,128 @@
+MOVJ(point, tool, speedParam)
+MOVJ3(point1, point2, tool, speedParam)
+MOVJ4(point1, point2, point3, tool, speedParam1, speedParam2, speedParam3)
+MOVL(point, tool, speedParam)
+MOVC(point1, point2, tool, speedParam)
+MOVP(J1, J2, J3, J4, J5, J6, R, S, T, speedParam)
+JUMP(point, tool, speedParam, z_height)
+JUMPJ(point, tool, upSpeedParam, jointSpeedParam, downSpeedParam, z_up, z_limit, z_down)
+JUMPL(point, tool, upSpeedParam, lineSpeedParam, downSpeedParam, z_up, z_limit, z_down)
+JUMPS(point1, point2, tool, upSpeedParam, jointSpeedParam, downSpeedParam, z_up, z_down)
+X/Y/Z/U/V/W/R/S/XY/XZ/XU/YZ/YU/ZU/RS/XYZ/XYU/XZU/YZU/XYZUVW(value)
+BGO(X, Y, Z, RZ, RY, RX, local, tool, jointSpeedParam)
+TGO(X, Y, Z, RZ, RY, RX, local, tool, jointSpeedParam)
+BMOVE(X, Y, Z, RZ, RY, RX, local, tool, lineSpeedParam)
+TMOVE(X, Y, Z, RZ, RY, RX, local, tool, lineSpeedParam)
+
+Process_Out = {
+{outputIndex, Flag, 1, percent},
+{outputIndex, Flag, 1, percent}
+}
+MOVJ(point, tool, speedParam, 1, Process_Out)
+
+WaitStopIO(index, inputIndex, Status)
+
+CURVE(index, {PT1, PT2...PTn})
+CVMOVE(index, tool, speedParam, Open/Close, Gesture_Flag)
+
+OUT{outputIndex, Flag)
+OUTWB{outputIndex, Flag)
+WAIT_IN(inputIndex, Flag, waitTime)
+IN(inputIndex)
+OUT(outputIndex)
+SetGIN(ID, inputIndex0, inputIndex1, inputIndex2...inputIndexN)(0 < N < 8)
+SetGOUT(ID, outputIndex0, outputIndex1, outputIndex2...outputIndexN)(0 < N < 8)
+ClearGIN(ID)
+ClearGOUT(ID)
+GIN(ID)
+GOUT(ID)
+GOUT(ID, stateCode)
+CheckIO(ID, inputIndex, inputState, output, outputState, holdTime)
+ClearCheckIO(ID)
+
+string.len(data)
+string.upper(data)
+string.lower(data)
+string.sub(data, startIndex, endIndex)
+string.char(var1, var2, var3...)
+string.byte(data, index)
+string.format(format, var1, var2...)
+string.find(data, targetString, startIndex)
+string.match(data, targetString)
+string.gsub(data, repalcedString, targetString, times)
+Split(data, separator)
+
+MOTOR(On/Off)
+DELAY(delayTime_ms)
+print(str1.. str2.. str3...)
+Log(str1.. str2.. str3...)                 ——注：".."是连接符
+SetPrint(Flag)
+IOSetting(0, Flag)
+NetSetting(netID, 0, Flag)
+VELPCT(percent)
+ERROR(errorData)
+SetBox(boxIndex, xMax, yMax, zMax, xMin, yMin, zMin, outputIndex, Mode, true)
+ClearBox(boxIndex)
+GetBox(boxIndex)
+GetTick()
+
+CCPOS( )
+CJPOS( )
+CCPOS(toolName, userIndex)
+ToolOffset(basePoint, toolName, xOffset, yOffset, zOffset)
+SetPallet(palletIndex, originalPointName, basePointName1, basePointName2, splitNum1, splitNum2)
+Pallet(palletIndex, pointIndex)
+ClearPallet(palletIndex)
+AddPoint(pointName, pointDes, pointVariable)
+AddPoint(pointName, pointDes, userIndex, toolIndex)
+ModifyPoint(pointName, pointDes, userIndex, pointVariable)
+DeletePoint (pointName)
+SavePoints("Points.pt")
+clone(pointName)
+
+NetOpen(netID, IP, port, AsServer/AsClient, -1, 0)
+NetClose(netID)
+NetSend(netID, data)
+NetRecv(netID, separator)
+
+MBReadHoldingReg(regAddress)
+MBWriteHoldingReg(regAddress, data)
+
+SciOpen(serialPort, baudRate, dataBit, parityBit, stopBit, 0, 0)
+SciSend(serialPort, serialData)
+SciRecv(serialPort)
+SciClose(serialPort)
+
+WriteInputRegAsFloat(regAddress, data)
+ReadHoldingRegAsFloat (regAddress)
+MBWriteInputReg (regAddress, data)
+MappingInputReg(targetRegAddress, sourceRegAddress, regLength)
+
+SLEEP(sleepTime_ms)
+SetIVar(index, data)
+GetIVar(index)
+SetDVar(index, data)
+GetDVar(index)
+
+VisionTrans(index, cameraPosX, cameraPosY, cameraPosU, shootPos, referencePos)
+VisionTransTargetPt(shootPos, targetPos, referencePos, realPos, 0)
+
+SetHVTrigPos(axisID, targetAngle, in_index)  ——注：in_index为未说明取值的保留参数
+DisableHVTrig(axisID)
+TargetPosUpdate(0, newTargetPos)
+MotionUpdate()
+
+SetRbDynPara(0, Presult)
+RbIndentifyEnable(0, Flag)
+GetRbDynPara(0)
+rtn,MotorTorque[axisID + 1] = GetMotorRatedTorque(axisID)
+rtn,JointTorque[axisID + 1] = GetAxisRatedTorque(axisID)
+SetAddMass(mass, masscenterX, masscenterY, masscenterZ))
+
+CaptureOn(index)
+CaptureOff(index)
+GetCaptureData()
+
+
+
+

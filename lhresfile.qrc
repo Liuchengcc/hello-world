@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/module.ist</file>
+        <file>res/puma.ist</file>
+        <file>res/scara.ist</file>
+        <file>res/lhapis.api</file>
+        <file>res/chs/err.ini</file>
+        <file>res/chs/event.ini</file>
+        <file>res/chs/tip.ini</file>
+        <file>res/chs/warning.ini</file>
+        <file>res/default/axis.json</file>
+        <file>res/default/BackgroundTask1.lhprj</file>
+        <file>res/default/lh.json</file>
+        <file>res/default/Main.lh</file>
+        <file>res/default/PLC.lh</file>
+        <file>res/default/Points.pt</file>
+        <file>res/default/scara0.ist</file>
+        <file>res/default/scara1.ist</file>
+        <file>res/default/SubTask1.lh</file>
+        <file>res/default/SubTask2.lh</file>
+        <file>res/default/Tools.cr</file>
+        <file>res/default/Users.cr</file>
+    </qresource>
+</RCC>

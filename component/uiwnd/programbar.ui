@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProgramBar</class>
+ <widget class="QWidget" name="ProgramBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>248</width>
+    <height>522</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QTreeWidget" name="treeWidget">
+     <attribute name="headerVisible">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+  <action name="action_newPg">
+   <property name="text">
+    <string>新建工程</string>
+   </property>
+  </action>
+  <action name="action_newFile">
+   <property name="text">
+    <string>新建文件</string>
+   </property>
+  </action>
+  <action name="action_delFile">
+   <property name="text">
+    <string>删除文件</string>
+   </property>
+  </action>
+  <action name="action_openFile">
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="action_newInstance">
+   <property name="text">
+    <string>新建实例</string>
+   </property>
+  </action>
+  <action name="action_instanceScara">
+   <property name="text">
+    <string>scara</string>
+   </property>
+  </action>
+  <action name="action_instancePuma">
+   <property name="text">
+    <string>puma</string>
+   </property>
+  </action>
+  <action name="action_instanceModule">
+   <property name="text">
+    <string>module</string>
+   </property>
+  </action>
+  <action name="action_setActive">
+   <property name="text">
+    <string>设为活动</string>
+   </property>
+  </action>
+  <action name="action_openFolder">
+   <property name="text">
+    <string>打开项目工程目录...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

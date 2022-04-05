@@ -1,0 +1,83 @@
+require "Points"	
+require "Tools"
+require "Users"
+--Variable Definition
+local a=1
+local b=2
+local str="LinkHou "
+--Main Function
+function LMain()
+	JSpeed={vel=70,accel=50,decel=50,tvel=0,rvel=0,blend=0,leave=0,reach=0}	--Speed Variable
+	JSpeed2={vel=50,accel=15,decel=15,tvel=0,rvel=0,blend=0,leave=0,reach=0}	
+	JSpeed3={vel=30,accel=15,decel=15,tvel=0,rvel=0,blend=0,leave=0,reach=0}	
+	LSpeed={vel=1000,accel=15,decel=15,tvel=0,rvel=0,blend=0,leave=0,reach=0}
+	VELPCT(50)
+    MOVJ(P1,tool1,JSpeed)
+    DELAY(0)
+    movj=CCPOS()
+    print("MOVJ: P1 ".." x:"..tostring(movj.x).." y:"..tostring(movj.y).." z:"..tostring(movj.z).." u:"..tostring(movj.u))
+    movjj=CJPOS()
+    print("MOVJ: P1 ".." x:"..tostring(movjj.x).." y:"..tostring(movjj.y).." z:"..tostring(movjj.z).." u:"..tostring(movjj.u))
+    print(" ")
+    MOVJ3(P3,P2,tool1,JSpeed)
+    DELAY(1000000)
+    movj3=CCPOS()
+    print("MOVJ3:P2  ".." x:"..tostring(movj3.x).." y:"..tostring(movj3.y).." z:"..tostring(movj3.z).." u:"..tostring(movj3.u))
+    movj3j=CJPOS()
+    print("MOVJ3: P2 ".." x:"..tostring(movj3j.x).." y:"..tostring(movj3j.y).." z:"..tostring(movj3j.z).." u:"..tostring(movj3j.u))
+    print(" ")
+ 
+    MOVJ(P1,tool1,JSpeed)
+    JUMPJ(P2,tool1,JSpeed,JSpeed,JSpeed,8,-10,9)
+    MOVJ(P1,tool1,JSpeed)
+    DELAY(1000000)
+    jumpj=CCPOS()
+    print("JUMPJ:P2  ".." x:"..tostring(jumpj.x).." y:"..tostring(jumpj.y).." z:"..tostring(jumpj.z).." u:"..tostring(jumpj.u))
+    jumpj=CJPOS()
+    print("JUMPJ:P2  ".." x:"..tostring(jumpj.x).." y:"..tostring(jumpj.y).." z:"..tostring(jumpj.z).." u:"..tostring(jumpj.u))
+    print(" ")
+    MOVJ(P1,tool1,JSpeed) 
+    JUMPL(P2,tool1,LSpeed,LSpeed,LSpeed,5,-10,15)
+    DELAY(0)
+    jumpl=CCPOS()
+    print("JUMPL:P2  ".." x:"..tostring(jumpl.x).." y:"..tostring(jumpl.y).." z:"..tostring(jumpl.z).." u:"..tostring(jumpl.u))
+    jumplj=CJPOS()
+    print("JUMPL:P2  ".." x:"..tostring(jumplj.x).." y:"..tostring(jumplj.y).." z:"..tostring(jumplj.z).." u:"..tostring(jumplj.u))
+    print(" ")
+    MOVJ(P1,tool1,JSpeed2)
+    JUMPS(P3,P2,tool1,JSpeed,JSpeed,JSpeed,5,20) 
+    DELAY(0)
+    jumps=CCPOS()
+    print("JUMPS:P2  ".." x:"..tostring(jumps.x).." y:"..tostring(jumps.y).." z:"..tostring(jumps.z).." u:"..tostring(jumps.u))
+    jumpsj=CJPOS()
+    print("JUMPS:P2  ".." x:"..tostring(jumpsj.x).." y:"..tostring(jumpsj.y).." z:"..tostring(jumpsj.z).." u:"..tostring(jumpsj.u))
+    print(" ")
+    --[[BGO(10,10,10,10,0,0,1,tool1,JSpeed)
+    DELAY(0)
+    bgo=CCPOS()
+    print("BGO:  ".." x:"..tostring(bgo.x).." y:"..tostring(bgo.y).." z:"..tostring(bgo.z).." u:"..tostring(bgo.u))
+    bgoj=CJPOS()
+    print("BGO:  ".." x:"..tostring(bgoj.x).." y:"..tostring(bgoj.y).." z:"..tostring(bgoj.z).." u:"..tostring(bgoj.u))
+    print(" ")
+    BMOVE(10,10,10,10,0,0,1,tool1,JSpeed)
+    DELAY(0)
+    bmove=CCPOS()
+    print("BMOVE:  ".." x:"..tostring(bmove.x).." y:"..tostring(bmove.y).." z:"..tostring(bmove.z).." u:"..tostring(bmove.u))
+    bmovej=CJPOS()
+    print("BMOVE:  ".." x:"..tostring(bmovej.x).." y:"..tostring(bmovej.y).." z:"..tostring(bmovej.z).." u:"..tostring(bmovej.u))
+    print(" ")
+    TGO(10,10,10,10,0,0,1,tool1,JSpeed)
+    DELAY(0)
+    tgo=CCPOS()
+    print("TGO:  ".." x:"..tostring(tgo.x).." y:"..tostring(tgo.y).." z:"..tostring(tgo.z).." u:"..tostring(tgo.u))
+    tgoj=CJPOS()
+    print("TGO:  ".." x:"..tostring(tgoj.x).." y:"..tostring(tgoj.y).." z:"..tostring(tgoj.z).." u:"..tostring(tgoj.u))
+    print(" ")
+    TMOVE(10,10,10,10,0,0,1,tool1,JSpeed)
+    DELAY(0)
+    tmove=CCPOS()
+    print("TMOVE:  ".." x:"..tostring(tmove.x).." y:"..tostring(tmove.y).." z:"..tostring(tmove.z).." u:"..tostring(tmove.u))
+    tmovej=CJPOS()
+    print("TMOVE:  ".." x:"..tostring(tmovej.x).." y:"..tostring(tmovej.y).." z:"..tostring(tmovej.z).." u:"..tostring(tmovej.u))]]--
+end {0,1,2,3}
+	

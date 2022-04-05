@@ -1,0 +1,27 @@
+{
+    "type":"scara",
+   "scara" : {
+      "RobotID":"0",
+      "RobotType" : "6",
+      "AXISNum" : "6",
+      "addAxisSum":"2",
+      "AxisID" : ["0","1","2","3","4","5"],
+      "Car_MaxGAcc" : "720.0",
+      "Car_MaxGVel" : "360.0",
+      "Car_MaxPAcc" : "6000.0",
+      "Car_MaxPVel" : "2000.0",
+      "Car_StopGDec" : "720.0",
+      "Car_StopPDec" : "6000.0",
+      "CoupleNum" : "1",
+      "CoupleRatio" : ["4,5,0.02"],
+      "Joint_StopDec" : ["1100","600","650","1500","900","1200"],
+      "RobotDof" : "6",
+      "Robot_Link" : ["50.0","420.0","40.0","0","430.0","80.0"],
+      "type" : "scara"
+   }
+}
+ "scara"
+   }
+}
+
+

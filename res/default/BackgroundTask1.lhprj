@@ -1,0 +1,33 @@
+{
+   "project" : {
+      "configs" : {
+         "files" : [ "axis.json", "lh.json" ],
+         "sums" : "2"
+      },
+      "instances" : {
+         "files" : [ "scara0.ist", "scara1.ist" ],
+         "sums" : "2"
+      },
+      "others" : {
+         "files" : [],
+         "sums" : "0"
+      },
+      "points" : {
+         "files" : [ "Points.pt" ],
+         "sums" : "1"
+      },
+      "programs" : {
+         "files" : [ "Main.lh", "PLC.lh", "SubTask1.lh", "SubTask2.lh" ],
+         "sums" : "4"
+      },
+      "tools" : {
+         "files" : [ "Tools.cr" ],
+         "sums" : "1"
+      },
+      "users" : {
+         "files" : [ "Users.cr" ],
+         "sums" : "1"
+      }
+   },
+   "verison" : "1.0"
+}

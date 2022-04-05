@@ -1,0 +1,19 @@
+require "Classicmodule"
+require "Points"	
+require "Tools"
+require "Users"
+require "GlobalVariable"
+--[[
+全局变量说明
+900 是用来处理输入检测
+800 计数检测
+
+12.29更新说明：因为上升沿检测计数受扫描周期的影响，现不启用此类计数方式
+
+]]--
+
+function LMain()
+	SLEEP(500)
+end
+
+

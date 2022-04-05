@@ -1,0 +1,29 @@
+require "Classicmodule"
+require "GlobalVariable"
+require "PointsUser"
+require "Functionuser"
+
+netTime=1
+function LMain()
+	::labe1::
+	SLEEP(500)
+	--print("ss")
+	local PramStart=GetIVar(999)
+	--print("PramStart="..PramStart)
+	if  PramStart==1 then
+		SLEEP(50)
+		goto labe1
+	end
+	--goto labe1
+	NetWorkConnect(NetNum,IP_Address,Port_Num,Mode,NetTime,End_Mark)
+	SLEEP(100)
+	while	 true do
+		net_check()
+		eip_float()
+		if	GetIVar(0)==1	or GetIVar(0)==2	then
+			eip_group()
+		end
+		
+	end
+end
+--

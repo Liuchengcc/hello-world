@@ -1,0 +1,21 @@
+{
+    "type":"module",
+   "module" : {
+      "AXISNum" : "",
+      "AxisID" : null,
+      "Car_MaxGAcc" : "",
+      "Car_MaxGVel" : "",
+      "Car_MaxPAcc" : "",
+      "Car_MaxPVel" : "",
+      "Car_StopGDec" : "",
+      "Car_StopPDec" : "",
+      "CoupleID" : null,
+      "CoupleNum" : "",
+      "CoupleRatio" : null,
+      "Joint_StopDec" : null,
+      "RobotDof" : "",
+      "RobotType" : "",
+      "Robot_Link" : "",
+      "type" : ""
+   }
+}

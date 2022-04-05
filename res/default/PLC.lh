@@ -1,0 +1,21 @@
+function  LMain()
+    local rtn=0
+	local data=""
+	for num=0,9 do
+		rtn=NetOpen(num,"192.168.5.188",6000+num,AsClient,10,0)
+		print("netopen  num="..tostring(num).."  rtn="..tostring(rtn))
+	end
+	while true do
+		for num=0,9	do
+			rtn,data=NetRecv(num)  
+			print("NetRecv  num="..tostring(num).."  rtn="..tostring(rtn).."   data="..data)
+		end
+		SLEEP(500)
+	end
+
+end
+
+--[[
+获取输入的上升一次
+全局变量900开始
+]]
